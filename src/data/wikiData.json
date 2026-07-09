@@ -1,0 +1,303 @@
+{
+  "characters": [
+    {
+      "id": "ainia",
+      "name": "Ainia",
+      "title": "Witch of the Woods",
+      "image": "/images/ainia.PNG",
+      "status": "Alive",
+      "affiliation": "Weatheria",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "aliases": [
+        "Ai",
+        "Aina"
+      ],
+      "physicalDescription": {
+        "hairColour": ["Green"],
+        "eyeColour": ["Yellow"],
+        "height": ["168 cm (5'6\")"]
+      },
+      "shortDescription": "A legendary, gentle sorcerer of extraordinary intellect who lives in seclusion on the floating island Weatheria.",
+      "biography": "Ainia (愛ニア) is a legendary sorcerer known for her extraordinary intelligence and mastery of magic. Once counted among the most powerful figures of her generation alongside Gaia Venaire, Xuan, and Eden, she later withdrew from the world and now lives a quiet life in seclusion on Weatheria. Despite her calm and gentle demeanor, Ainia possesses extremely refined magical control and one of the most dangerous Divine Blessings known—Echoes—allowing her to manipulate magic energy with incredible precision and replicate spells instantly without cost. She has adopted two girls whom she raises as her daughters in isolation.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Jet Stream",
+            "category": "Innate Magic",
+            "description": "Imbues magic energy with wind properties, generating powerful air currents, manipulating atmospheric pressure, and creating high-speed attacks or flight-aids."
+          },
+          {
+            "name": "Psycho Projection",
+            "category": "Innate Magic",
+            "description": "Imbues magic energy with psychokinetic properties, allowing Ainia to manipulate and guide magic energy at long distances to move or manipulate objects with high precision."
+          }
+        ],
+        "divineBlessing": [
+          {
+            "name": "Echoes",
+            "description": "Allows her to instantly recreate any spell she has cast before. When activated, all requirements of the spell are bypassed, including mana cost, rituals, incantations, preparation, or gestures."
+          }
+        ]
+      },
+      "trivia": [
+        "She is exceptionally fond of brewing rare herbal teas using leaves grown only in high-altitude environments.",
+        "She maintains a strategic, defensive combat style, preferring control and restraint over direct confrontation.",
+        "She rarely uses her magic for offensive purposes, reserving it instead for weather modification and tending to her gardens."
+      ],
+      "relationships": [
+        {
+          "characterId": "eden",
+          "relationType": "Sisters",
+          "description": "Eden is Ainia's sister. Despite their deep familial bond, Eden's growing desire to reconstruct the entire world has placed a quiet, tragic distance between them, with Eden criticizing Ainia for \"running away\" from the world's problems."
+        },
+        {
+          "characterId": "gaia-venaire",
+          "relationType": "Sisters",
+          "description": "Gaia is Ainia's sister. Despite their different paths, they share a very warm, positive relationship and maintain a deep bond."
+        },
+        {
+          "characterId": "xuan",
+          "relationType": "Sisters",
+          "description": "Xuan is Ainia's sister. Ainia is well aware of Xuan's unpredictable and hedonistic nature, as well as the sheer danger of her capability to steal abilities."
+        }
+      ]
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "title": "Limitless Architect",
+      "image": "/images/eden.PNG",
+      "status": "Alive",
+      "affiliation": "Independent",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "aliases": [
+        "EDEN"
+      ],
+      "physicalDescription": {
+        "hairColour": ["Light Blue", "White (EDEN)"],
+        "eyeColour": ["Brown", "White (EDEN)"],
+        "height": ["194 cm (6'4\")", "181 cm (5'11\") (EDEN)"]
+      },
+      "shortDescription": "A near-limitless architect of the physical world and former contemporary of Ainia, who seeks to remake the flawed world.",
+      "biography": "Eden is one of the most powerful sorcerers in the world and a contemporary of Gaia Venaire, Xuan, and Ainia. Possessing abilities that allow her to create, manipulate, and destroy matter itself, Eden's power approaches the level of reshaping reality. Combined with a Divine Blessing that removes the normal limitations of magic energy consumption, her abilities allow her to act as a near-limitless architect of the physical world.\n\nDespite her immense potential, Eden is known for her thoughtful and idealistic outlook. Over time, her growing disillusionment with the flaws of the world leads her to pursue the possibility of remaking it entirely.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Genesis Omnium Rerum",
+            "altName": "Genesis of All Things",
+            "category": "Innate Magic",
+            "description": "Eden can freely create, manipulate, and destroy matter according to her understanding of its structure and properties. Her control over matter allows her to reshape the physical world around her. Initially, her ability is limited to non-living matter. As her knowledge grows, she learns to create and modify living organisms, granting her the potential to alter life itself. The effectiveness and complexity of her creations depend entirely on her knowledge and comprehension of what she is attempting to create."
+          },
+          {
+            "name": "O Lux Illustris",
+            "altName": "O Brilliant Light",
+            "category": "Innate Magic",
+            "description": "Eden can imbue her magic energy with the properties of any form of energy she understands. By studying and comprehending different energy types, she can reproduce them through magic. Although capable of using multiple energy forms, she most commonly employs light energy, producing intense radiant attacks and energy constructs."
+          }
+        ],
+        "divineBlessing": [
+          {
+            "name": "Ordo Dei",
+            "altName": "Order of God",
+            "description": "Eden's innate magic does not require or consume magic energy. She can freely use Genesis Omnium Rerum and O Lux Illustris without energy cost or limitation. This allows Eden to perform large-scale creation, destruction, and manipulation without the constraints that normally restrict sorcerers."
+          }
+        ]
+      },
+      "trivia": [
+        "In combat, she employs a highly strategic, indirect approach, preferring to reshape the layout of the battlefield rather than engaging in direct head-on duels.",
+        "She collects ancient philosophical texts from forgotten civilizations."
+      ],
+      "relationships": [
+        {
+          "characterId": "ainia",
+          "relationType": "Sisters",
+          "description": "Ainia is Eden's sister. Though Eden loves Ainia deeply, she feels her sister's retreat into seclusion on Weatheria is a way of \"running away\" and avoiding the problems of the world."
+        },
+        {
+          "characterId": "gaia-venaire",
+          "relationType": "Sisters",
+          "description": "Gaia is Eden's sister. Rather than respecting Gaia for her strength, Eden disagrees with how Gaia chooses not to use her overwhelming power to \"fix\" the world."
+        },
+        {
+          "characterId": "xuan",
+          "relationType": "Sisters",
+          "description": "Xuan is Eden's sister. Eden's idealism contrasts sharply with Xuan's carefree, indulgent attitude, though Eden recognizes her sister's immense power."
+        }
+      ]
+    },
+    {
+      "id": "gaia-venaire",
+      "name": "Gaia Venaire",
+      "title": "Strongest Sorcerer",
+      "image": "/images/gaia-venaire.PNG",
+      "status": "Alive",
+      "affiliation": "Independent",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "aliases": [
+        "Lael Ilpheladon"
+      ],
+      "physicalDescription": {
+        "hairColour": ["Orange"],
+        "eyeColour": ["Cyan"],
+        "height": ["186 cm (6'1\")"]
+      },
+      "shortDescription": "A legendary special-grade sorcerer widely recognized as the strongest in the world, born with an unprecedented number of Innate Magics and Divine Blessings.",
+      "biography": "Gaia Venaire is a special-grade sorcerer and widely recognised as the strongest in the world. A human born with an unprecedented number of Innate Magics and Divine Blessings, she is often described as someone \"loved by the heavens\". Her overwhelming power and innate magic places her far beyond the level of ordinary sorcerers. Despite her immense strength, Gaia is known for her confident and relaxed demeanor. She enjoys testing herself against powerful opponents and approaches conflict with curiosity rather than fear. Her existence alone reshapes the balance of power in the world. From a young age, she was recognized as a prodigy in magic. Her power grew rapidly, eventually placing her above all other known sorcerers. She later forms a close bond with several powerful individuals, including Ainia, Eden, and Xuan.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Copy",
+            "category": "Innate Magic",
+            "description": "Gaia can reproduce any innate magic she has witnessed and fully understands. Once copied, she can freely use the magic as if it were her own. The effectiveness of the copied magic depends on her understanding of its mechanics."
+          },
+          {
+            "name": "Flight",
+            "category": "Innate Magic",
+            "description": "Gaia can freely manipulate her magic energy to achieve sustained flight, allowing her complete aerial mobility during combat."
+          },
+          {
+            "name": "Grace",
+            "category": "Innate Magic",
+            "description": "Gaia can heal injuries and enhance the physical condition of living beings using magic energy. This ability allows her to rapidly restore allies and strengthen their capabilities."
+          },
+          {
+            "name": "Heavy Voltage",
+            "category": "Innate Magic",
+            "description": "Gaia can imbue her magic energy with the properties of lightning, generating powerful electrical attacks and greatly increasing the speed and intensity of her techniques."
+          },
+          {
+            "name": "Starfall",
+            "category": "Innate Magic",
+            "description": "Gaia can generate massive amounts of kinetic energy and transfer it into her attacks or movement. This allows her to produce devastating strikes and extreme bursts of speed."
+          },
+          {
+            "name": "True Shot",
+            "category": "Innate Magic",
+            "description": "Gaia can lock onto a target with perfect precision. Once a target is acquired, her attacks will always connect regardless of distance or attack type, making both her melee and ranged strikes nearly impossible to evade."
+          }
+        ],
+        "divineBlessing": [
+          {
+            "name": "Everburn",
+            "description": "Gaia possesses an extraordinarily high rate of magic energy production, allowing her to generate vast reserves of energy continuously."
+          },
+          {
+            "name": "Extrasensory",
+            "description": "Grants Gaia an advanced sixth sense that allows her to perceive possible future events and react to threats before they occur."
+          },
+          {
+            "name": "Flair",
+            "description": "Provides Gaia with exceptional natural talent, allowing her to master skills and techniques in any field she pursues rapidly."
+          },
+          {
+            "name": "High Grade",
+            "description": "Greatly enhances Gaia’s intellectual ability and mental processing power, allowing her to analyze situations and solve problems at extraordinary speed."
+          },
+          {
+            "name": "Sanctity",
+            "description": "Grants Gaia complete immunity to all magical attacks. Magical techniques cannot directly harm her."
+          },
+          {
+            "name": "Titan",
+            "description": "Enhances Gaia’s physical body to extraordinary levels, granting immense strength, durability, and resilience."
+          }
+        ]
+      },
+      "trivia": [
+        "Highly adaptive and versatile fighter, combining overwhelming magical power with exceptional physical ability.",
+        "Capable of rapidly analyzing opponents and adapting strategies, using copied abilities creatively to counter enemies.",
+        "Feels a sense of freedom and yet carries the implicit responsibility of possessing overwhelming innate magic."
+      ],
+      "relationships": [
+        {
+          "characterId": "ainia",
+          "relationType": "Sisters",
+          "description": "Ainia is Gaia's sister. Despite Ainia's retreat to Weatheria, they maintain a warm and close relationship."
+        },
+        {
+          "characterId": "eden",
+          "relationType": "Sisters",
+          "description": "Eden is Gaia's sister. While Gaia respects Eden's reality-reshaping capabilities, they disagree on whether their power should be used to actively \"fix\" the world."
+        },
+        {
+          "characterId": "xuan",
+          "relationType": "Sisters",
+          "description": "Xuan is Gaia's sister. They share a confident, relaxed relationship as sisters who stand among the strongest individuals alive."
+        }
+      ]
+    },
+    {
+      "id": "xuan",
+      "name": "Xuan",
+      "title": "Walking Calamity",
+      "image": "/images/xuan.png",
+      "status": "Alive",
+      "affiliation": "Independent",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "aliases": [
+        "Yànhuò (焱禍)"
+      ],
+      "physicalDescription": {
+        "hairColour": ["Black"],
+        "eyeColour": ["Red"],
+        "height": ["191 cm (6'3\")"]
+      },
+      "shortDescription": "One of the most dangerous and unpredictable beings alive, who lives a carefree, hedonistic life utilizing stolen powers and absolute immortality.",
+      "biography": "Xuan (玄) is one of the most powerful individuals in the world and a close contemporary of Gaia Venaire, Ainia, and Eden. Possessing a unique innate magic that allows her to permanently steal the abilities of others, as well as a Divine Blessing that grants complete immortality, Xuan stands among the most dangerous beings alive.\n\nUnlike many powerful figures, Xuan does not pursue domination or grand ideals. Instead, she lives freely and indulgently, following her own whims and interests. Though she is not inherently cruel, she has little hesitation in using violence when challenged, and her immortality has given her a detached outlook toward life and conflict. From her youth, she has been closely associated with Gaia, Ainia, and Eden, and over time she has accumulated numerous abilities through her power, making her one of the most feared and unpredictable individuals in the world.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Shén Duó (神夺)",
+            "altName": "Apotheosis",
+            "category": "Innate Magic",
+            "description": "Xuan can permanently steal the innate magic of others. When she defeats or overwhelms an opponent with an innate magic, she can claim that magic as her own. Once taken, the ability becomes permanently available to her and the original user loses access to it."
+          },
+          {
+            "name": "Fén Tiān (焚天)",
+            "altName": "Inferno",
+            "category": "Innate Magic",
+            "description": "Xuan can imbue her magic energy with the properties of fire, producing intense and destructive flames. These flames can be shaped and intensified through her magic energy, allowing her to unleash large-scale destructive attacks."
+          }
+        ],
+        "divineBlessing": [
+          {
+            "name": "Bù Miè Zhēn Shēn (不灭真身)",
+            "altName": "Everlasting Immortal",
+            "description": "Xuan cannot die. Any damage inflicted upon her body will eventually regenerate, even if she is completely destroyed or vaporized. This regeneration occurs automatically and cannot be prevented by normal means."
+          }
+        ]
+      },
+      "trivia": [
+        "Extremely aggressive and fearless in combat due to her immortality, often fighting recklessly and ignoring damage entirely.",
+        "Combines stolen abilities with destructive fire-based attacks to place overwhelming pressure and relentless offense on her opponents.",
+        "Embodying themes of freedom without consequence, her journey explores the meaning of life when death is impossible and power is without restraint."
+      ],
+      "relationships": [
+        {
+          "characterId": "ainia",
+          "relationType": "Sisters",
+          "description": "Ainia is Xuan's sister. While Ainia has retired to a quiet life in seclusion, Xuan continues to live on her own terms, following her whims."
+        },
+        {
+          "characterId": "eden",
+          "relationType": "Sisters",
+          "description": "Eden is Xuan's sister. Xuan's carefree, consequence-free hedonism stands in stark contrast to Eden's thoughtful and idealistic pursuit of remaking the world."
+        },
+        {
+          "characterId": "gaia-venaire",
+          "relationType": "Sisters",
+          "description": "Gaia is Xuan's sister. As two of the most powerful beings in the world, they share a mutual respect and a relaxed confidence when dealing with each other."
+        }
+      ]
+    }
+  ],
+  "concepts": []
+}
