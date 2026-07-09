@@ -167,12 +167,52 @@ export default function CharacterPage() {
             </div>
 
             <div className="tab-content">
-              {activeTab === 'biography' && (
-                <div style={{ animation: 'fadeIn 0.25s ease' }}>
-                  <h2 style={{ marginTop: 0 }}>Overview</h2>
-                  <p className="biography-text">{character.biography}</p>
-                </div>
-              )}
+              {activeTab === 'biography' && (() => {
+                const tocSections = [
+                  { id: 'overview',     label: 'Overview',     show: true },
+                  { id: 'appearance',   label: 'Appearance',   show: !!character.appearance },
+                  { id: 'personality',  label: 'Personality',  show: !!character.personality },
+                ];
+                const visibleSections = tocSections.filter(s => s.show);
+
+                return (
+                  <div style={{ animation: 'fadeIn 0.25s ease' }}>
+                    <h2 id="overview" style={{ marginTop: 0 }}>Overview</h2>
+                    <p className="biography-text">{character.biography}</p>
+
+                    {/* Table of Contents */}
+                    {visibleSections.length > 1 && (
+                      <nav className="toc-box" aria-label="Table of Contents">
+                        <div className="toc-title">Contents</div>
+                        <ol className="toc-list">
+                          {visibleSections.map((section, idx) => (
+                            <li key={section.id} className="toc-item">
+                              <span className="toc-num">{idx + 1}</span>
+                              <a href={`#${section.id}`} className="toc-link">
+                                {section.label}
+                              </a>
+                            </li>
+                          ))}
+                        </ol>
+                      </nav>
+                    )}
+
+                    {character.appearance && (
+                      <>
+                        <h2 id="appearance">Appearance</h2>
+                        <p className="biography-text">{character.appearance}</p>
+                      </>
+                    )}
+
+                    {character.personality && (
+                      <>
+                        <h2 id="personality">Personality</h2>
+                        <p className="biography-text">{character.personality}</p>
+                      </>
+                    )}
+                  </div>
+                );
+              })()}
 
               {activeTab === 'abilities' && (
                 <div style={{ animation: 'fadeIn 0.25s ease', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -181,7 +221,7 @@ export default function CharacterPage() {
                       <h3 style={{ borderBottom: '1.5px solid var(--border-mid)', paddingBottom: '0.4rem', marginBottom: '1rem', fontFamily: 'var(--font-headings)', color: 'var(--rose)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Magic</h3>
                       <div className="abilities-grid">
                         {character.abilities.magic.map((ability, idx) => (
-                          <div key={idx} className="ability-card">
+                          <div key={idx} className="ability-card ability-card--magic">
                             <div className="ability-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
                               <div>
                                 <h4 className="ability-name">
@@ -212,7 +252,7 @@ export default function CharacterPage() {
                       <h3 style={{ borderBottom: '1.5px solid var(--border-mid)', paddingBottom: '0.4rem', marginBottom: '1rem', fontFamily: 'var(--font-headings)', color: 'var(--rose)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Divine Blessing</h3>
                       <div className="abilities-grid">
                         {character.abilities.divineBlessing.map((ability, idx) => (
-                          <div key={idx} className="ability-card">
+                          <div key={idx} className="ability-card ability-card--divine">
                             <div className="ability-header">
                               <h4 className="ability-name">
                                 {ability.name}

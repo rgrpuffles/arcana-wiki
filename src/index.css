@@ -1171,12 +1171,88 @@ a:hover { color: var(--rose); }
 
 .character-body-layout { display: flow-root; }
 
+/* TOC anchor scroll offset */
+.tab-content h2[id] {
+  scroll-margin-top: 2rem;
+}
+
 /* Biography text */
 .biography-text {
   font-family: var(--font-serif);
   color: var(--ink-mid);
   line-height: 1.85;
   font-size: 0.97rem;
+}
+
+/* ─── Table of Contents ───────────────────────────────────── */
+.toc-box {
+  display: inline-block;
+  min-width: 200px;
+  max-width: 280px;
+  background: var(--bg-panel-alt);
+  border: 1.5px solid var(--border-mid);
+  border-radius: 8px;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  font-size: 0.88rem;
+}
+
+.toc-title {
+  font-family: var(--font-headings);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  background: var(--bg-inset);
+  border-bottom: 1.5px solid var(--border-mid);
+  padding: 0.5rem 0.9rem;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.45rem 0;
+  counter-reset: none;
+}
+
+.toc-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.2rem 0.9rem;
+  transition: background var(--speed-fast);
+}
+
+.toc-item:hover {
+  background: var(--bg-hover);
+}
+
+.toc-num {
+  font-family: var(--font-headings);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-ghost);
+  flex-shrink: 0;
+  min-width: 1.1rem;
+}
+
+.toc-link {
+  color: var(--rose);
+  text-decoration: none;
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  transition: color var(--speed-fast), text-decoration-color var(--speed-fast);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+}
+
+.toc-link:hover {
+  color: var(--violet);
+  text-decoration-color: var(--violet-light);
 }
 
 /* Abilities */
@@ -1190,11 +1266,19 @@ a:hover { color: var(--rose); }
 .ability-card {
   background: var(--bg-panel);
   border: 1.5px solid var(--border);
-  border-left: 4px solid var(--violet);
+  border-left: 4px solid var(--border-strong);
   border-radius: 0 8px 8px 0;
   padding: 1.1rem 1.25rem;
   box-shadow: var(--shadow-sm);
   transition: border-color var(--speed), box-shadow var(--speed), transform var(--speed);
+}
+
+.ability-card--magic {
+  border-left-color: #4a7fc1;
+}
+
+.ability-card--divine {
+  border-left-color: var(--gold);
 }
 
 .ability-card:hover {
