@@ -28,14 +28,14 @@ export default function CharacterPage() {
     return found ? found.name : relId;
   };
 
-  const getAffiliationBadge = (affiliation) => {
-    switch (affiliation) {
+  const getFactionBadge = (faction) => {
+    switch (faction) {
       case 'Weatheria':
-        return <span className="badge badge-green"><Moon size={10} style={{ marginRight: 4 }} />Weatheria</span>;
+        return <span className="badge badge-blue badge-faction"><span className="badge-icon"><Moon size={10} /></span>Weatheria</span>;
       case 'Independent':
-        return <span className="badge badge-violet"><Sparkles size={10} style={{ marginRight: 4 }} />Independent</span>;
+        return <span className="badge badge-violet badge-faction"><span className="badge-icon"><Sparkles size={10} /></span>Independent</span>;
       default:
-        return <span className="badge"><Moon size={10} style={{ marginRight: 4 }} />{affiliation}</span>;
+        return <span className="badge badge-faction"><span className="badge-icon"><Moon size={10} /></span>{faction}</span>;
     }
   };
 
@@ -68,7 +68,7 @@ export default function CharacterPage() {
       {/* Header */}
       <header className="character-header">
         <h1 className="char-main-title">{character.name}</h1>
-        <p className="char-subtitle">{character.title}</p>
+        <p className="char-subtitle">{character.banner}</p>
       </header>
 
       {/* Body */}
@@ -77,7 +77,7 @@ export default function CharacterPage() {
         <aside className="wiki-infobox">
           <div className="infobox-header">
             <div className="infobox-title">{character.name}</div>
-            <div className="infobox-subtitle">{character.title}</div>
+            <div className="infobox-subtitle">{character.banner}</div>
           </div>
 
           <div className="infobox-image-container">
@@ -110,8 +110,8 @@ export default function CharacterPage() {
                 <td>{character.species}</td>
               </tr>
               <tr>
-                <th>Affiliation</th>
-                <td>{getAffiliationBadge(character.affiliation)}</td>
+                <th>Faction</th>
+                <td>{getFactionBadge(character.faction)}</td>
               </tr>
               <tr>
                 <th>Status</th>

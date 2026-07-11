@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Home,
   Search,
-  Sparkles,
   Compass,
+  Users,
 } from 'lucide-react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import wikiData from '../data/wikiData.json';
@@ -40,7 +39,7 @@ export default function Sidebar() {
       .filter(
         (char) =>
           char.name.toLowerCase().includes(query.toLowerCase()) ||
-          char.affiliation.toLowerCase().includes(query.toLowerCase()) ||
+          char.faction.toLowerCase().includes(query.toLowerCase()) ||
           char.species.toLowerCase().includes(query.toLowerCase()),
       )
       .map((char) => ({ ...char, type: 'character' }));
@@ -55,8 +54,6 @@ export default function Sidebar() {
     setIsSearchFocused(false);
   };
 
-  // Helper: is the given path the current active route?
-  const isActive = (path) => location.pathname === path;
   const isCharActive = (id) => location.pathname.startsWith(`/characters/${id}`);
   const isCharactersActive = location.pathname.startsWith('/characters');
 
@@ -94,7 +91,7 @@ export default function Sidebar() {
                 >
                   <div className="result-name">{result.name}</div>
                   <div className="result-meta">
-                    Character · {result.affiliation}
+                    Character · {result.faction}
                   </div>
                 </div>
               ))}
@@ -113,7 +110,6 @@ export default function Sidebar() {
               className="section-title"
               style={{
                 textDecoration: 'none',
-                display: 'block',
                 cursor: 'pointer',
                 color: isCharactersActive ? 'var(--rose)' : 'var(--ink-ghost)',
                 transition: 'color var(--speed)'
@@ -121,6 +117,7 @@ export default function Sidebar() {
               onMouseEnter={(e) => e.target.style.color = 'var(--rose)'}
               onMouseLeave={(e) => e.target.style.color = isCharactersActive ? 'var(--rose)' : 'var(--ink-ghost)'}
             >
+              <Users className="section-title-icon" size={11} />
               Characters
             </Link>
             <ul className="sub-nav-list">
@@ -156,13 +153,6 @@ export default function Sidebar() {
         </ul>
       </nav>
 
-      {/* Footer */}
-      <div className="sidebar-footer">
-        <div className="footer-content">
-          <Sparkles size={13} className="accent-gold-text" />
-          <span>Fanon Codex v1.0</span>
-        </div>
-      </div>
     </aside>
   );
 }
