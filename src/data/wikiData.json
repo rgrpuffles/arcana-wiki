@@ -306,6 +306,148 @@
         }
       ]
     }
+    ,
+    {
+      "id": "akari",
+      "name": "Akari",
+      "banner": "Abstract Acquaintance",
+      "image": "/images/akari.PNG",
+      "status": "Alive",
+      "faction": "Independent",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "physicalDescription": {
+        "hairColour": ["Unknown"],
+        "eyeColour": ["Unknown"],
+        "height": ["174 cm"]
+      },
+      "shortDescription": "A skilled sorcerer whose abilities revolve around a unique magical concept known as Colour.",
+      "appearance": "Akari's recorded physical traits are limited to unknown hair and eye colours and a height of 174 cm.",
+      "personality": "Akari is playful and competitive, with a strong enjoyment of strategy and games of chance. She remains calm under pressure and prefers clever tactics over brute force, often treating battles like a game to be solved.",
+      "biography": "Akari is a skilled sorcerer whose abilities revolve around a unique magical concept known as Colour. Unlike many powerful sorcerers who rely on overwhelming force, her strength lies in strategy, creativity, and clever manipulation of magical effects.\n\nInspired by games of strategy and probability, Akari treats combat like a complex card game where every move can influence the outcome. She developed a combat style built around prepared vessels such as cards, talismans, and paper charms, using them to shape enchantments and curses with careful, tactical intent.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Power Five",
+            "category": "Innate Magic",
+            "description": "Akari can imbue magic energy with a concept she calls Colour. The five possible Colours are Red, Blue, Green, White, and Black. Colour acts as a carrier for enchantments or curses that alter the behavior of the magic energy or object it is applied to. When creating Colour, she cannot choose which Colour will appear, but she receives a brief moment of awareness immediately before it manifests, allowing her to assign an enchantment or curse based on her interpretation of that Colour's meaning. Colour can be imbued into her own magic energy, another person's magic energy, objects capable of carrying magic energy, and summoning vessels such as talismans or cards. If a familiar is summoned through a vessel that contains Colour, the enchantment will apply to the familiar. When a single vessel successfully contains all five Colours at sufficient strength and balance, their interaction produces a Divine Blessing called Colourless, drawn from a predetermined pool of five possible effects. This phenomenon is extremely rare because maintaining all five Colours simultaneously is very difficult."
+          }
+        ]
+      },
+      "trivia": [
+        "A vessel can only hold one enchantment per Colour.",
+        "Reapplying the same Colour strengthens the existing effect rather than replacing it.",
+        "The amount of Colour a vessel can hold depends on the amount of magic energy within it.",
+        "Colour slowly fades over time as its magic energy dissipates."
+      ]
+    },
+    {
+      "id": "aurelia",
+      "name": "Aurelia",
+      "banner": "Abstract Acquaintance",
+      "image": "/images/aurelia.jpg",
+      "status": "Alive",
+      "faction": "Independent",
+      "species": "Human",
+      "gender": "Female",
+      "age": "Unknown",
+      "physicalDescription": {
+        "hairColour": ["Pink"],
+        "eyeColour": ["Multi-coloured"],
+        "height": ["172 cm"]
+      },
+      "shortDescription": "A sorcerer whose powers are built around deep bonds with animals, especially her loyal dog familiars.",
+      "appearance": "Aurelia is a human woman standing at 172 cm. She has pink hair and multi-coloured eyes.",
+      "personality": "Aurelia is energetic and adventurous, deeply loyal to her companions, affectionate toward animals, and playful while still dependable. She treats her familiars as partners rather than tools.",
+      "biography": "Aurelia is a sorcerer whose abilities revolve around forming deep bonds with animals. Through her innate ability, she can transform animals she is closely connected to into magical familiars. These familiars gain their own supernatural abilities and can transform into magical equipment Aurelia can use in combat or travel.\n\nAurelia has only used this ability on dogs so far, creating a small family of loyal companions who assist her both in battle and in everyday life. Her fighting style combines mobility, physical combat, and the unique abilities granted by her familiars.",
+      "abilities": {
+        "magic": [
+          {
+            "name": "Girl's Best Friend",
+            "category": "Innate Magic",
+            "description": "Aurelia can transform animals she shares a deep bond with into magical familiars. The animal must willingly accept the bond in order for the transformation to occur. Familiars created through this ability gain supernatural traits and can transform between two forms. In animal form, the familiar retains its original body but gains a unique innate ability or supernatural trait. In item form, the familiar can transform into a magical item that Aurelia can use directly. When a familiar enters item form, it returns to Aurelia regardless of distance. A familiar retains its personality and consciousness in both forms. If a familiar dies, it permanently becomes its item form, and the associated ability becomes stronger."
+          },
+          {
+            "name": "Girl's Best Friend: Cull",
+            "category": "Familiar",
+            "description": "Black wolf familiar. Item form: gauntlets. Trait: physical power. Cull grants Aurelia greatly enhanced strength and striking power when in gauntlet form."
+          },
+          {
+            "name": "Girl's Best Friend: Dawn",
+            "category": "Familiar",
+            "description": "Samoyed pup familiar. Item form: necklace. Ability: passive healing. Dawn continuously provides gentle healing energy to Aurelia while worn."
+          },
+          {
+            "name": "Girl's Best Friend: Diji",
+            "category": "Familiar",
+            "description": "Norwegian Lundehund familiar. Item form: shoes. Ability: adhesion and jumping. Diji allows Aurelia to stick to surfaces and perform powerful leaps."
+          },
+          {
+            "name": "Girl's Best Friend: Ferror",
+            "category": "Familiar",
+            "description": "White Swiss Shepherd familiar. Item form: backpack. Ability: infinite storage. Ferror is deceased and permanently exists in item form."
+          },
+          {
+            "name": "Girl's Best Friend: Immi",
+            "category": "Familiar",
+            "description": "Samoyed familiar. Item form: waist bag. Ability: magic energy storage. Immi can store magic energy within the bag for later use."
+          },
+          {
+            "name": "Girl's Best Friend: Jazz",
+            "category": "Familiar",
+            "description": "White Swiss Shepherd pup familiar. Item form: goggles. Ability: enhanced vision. Jazz allows Aurelia to zoom in and observe distant objects with extreme clarity."
+          },
+          {
+            "name": "Girl's Best Friend: Kite",
+            "category": "Familiar",
+            "description": "Miniature American Shepherd familiar. Item form: knife. Ability: lightning. Kite can generate and channel electrical energy."
+          }
+        ]
+      },
+      "trivia": [
+        "Aurelia's familiars form a close-knit pack, with several belonging to the same family.",
+        "Her combat style combines mobility, physical combat, and the unique abilities granted by her familiars.",
+        "She has only used Girl's Best Friend on dogs so far."
+      ],
+      "relationships": [
+        {
+          "name": "Cull",
+          "relationType": "Familiar",
+          "description": "Aurelia's black wolf familiar. In animal form, Cull grants tremendous physical force and durability, and in item form he becomes a pair of gauntlets."
+        },
+        {
+          "name": "Dawn",
+          "relationType": "Familiar",
+          "description": "Aurelia's Samoyed pup familiar. Dawn provides passive healing and becomes a necklace in item form."
+        },
+        {
+          "name": "Diji",
+          "relationType": "Familiar",
+          "description": "Aurelia's Norwegian Lundehund familiar. Diji is extremely agile and capable of climbing difficult terrain, and in item form becomes shoes."
+        },
+        {
+          "name": "Ferror",
+          "relationType": "Familiar",
+          "description": "Aurelia's deceased White Swiss Shepherd familiar. Ferror permanently exists in item form as a backpack with immense storage capacity."
+        },
+        {
+          "name": "Immi",
+          "relationType": "Familiar",
+          "description": "Aurelia's Samoyed familiar. Immi can store magic energy and becomes a waist bag in item form."
+        },
+        {
+          "name": "Jazz",
+          "relationType": "Familiar",
+          "description": "Aurelia's White Swiss Shepherd pup familiar. Jazz grants enhanced vision and becomes goggles in item form."
+        },
+        {
+          "name": "Kite",
+          "relationType": "Familiar",
+          "description": "Aurelia's miniature American Shepherd familiar. Kite can generate and channel electrical energy, and in item form becomes a knife."
+        }
+      ]
+    }
   ],
   "concepts": []
 }

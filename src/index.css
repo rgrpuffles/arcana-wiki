@@ -297,7 +297,7 @@ a:hover { color: var(--rose); }
   transform: translateY(-2px);
 }
 
-/* ─── Infobox (wiki-style float right) ───────────────────── */
+/* ─── Infobox ───────────────────────────────────────────── */
 .wiki-infobox {
   float: right;
   width: 300px;
@@ -309,9 +309,8 @@ a:hover { color: var(--rose); }
   box-shadow: var(--shadow-md);
   font-size: 0.84rem;
   animation: bloom 0.4s var(--ease);
-  position: sticky;
-  top: 2rem;
-  z-index: 10;
+  position: static;
+  z-index: 1;
 }
 
 .wiki-infobox::before {
@@ -1200,7 +1199,7 @@ a:hover { color: var(--rose); }
 .character-page { animation: fadeUp 0.35s var(--ease); }
 
 .character-header {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
@@ -1208,7 +1207,7 @@ a:hover { color: var(--rose); }
   font-size: 2.8rem;
   margin-bottom: 0.25rem;
   text-align: left;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 .char-main-title::before { content: none; }
@@ -1712,7 +1711,6 @@ a:hover { color: var(--rose); }
     width: 100%;
     margin-left: 0;
     margin-bottom: 2rem;
-    position: static;
   }
 
   .wiki-image-box {

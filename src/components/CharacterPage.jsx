@@ -280,12 +280,12 @@ export default function CharacterPage() {
                     <div
                       key={idx}
                       className="relationship-card"
-                      onClick={() => navigate(`/characters/${rel.characterId}/biography`)}
-                      title={`Go to ${getRelationName(rel.characterId)}'s page`}
-                      style={{ cursor: 'pointer' }}
+                      onClick={rel.characterId ? () => navigate(`/characters/${rel.characterId}/biography`) : undefined}
+                      title={rel.characterId ? `Go to ${getRelationName(rel.characterId)}'s page` : undefined}
+                      style={{ cursor: rel.characterId ? 'pointer' : 'default' }}
                     >
                       <div className="relationship-header">
-                        <h4 className="relationship-name">{getRelationName(rel.characterId)}</h4>
+                        <h4 className="relationship-name">{rel.name || getRelationName(rel.characterId)}</h4>
                         <span className="badge badge-rose" style={{ fontSize: '0.62rem' }}>{rel.relationType}</span>
                       </div>
                       <p className="relationship-desc">{rel.description}</p>

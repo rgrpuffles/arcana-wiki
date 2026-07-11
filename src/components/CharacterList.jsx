@@ -6,8 +6,12 @@ import { publicUrl } from '../utils/publicUrl';
 
 export default function CharacterList() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [groupBy, setGroupBy] = useState('faction');
+  const [groupBy, setGroupBy] = useState('banner');
   const navigate = useNavigate();
+  const groupingOptions = [
+    { value: 'banner', label: 'Banner' },
+    { value: 'faction', label: 'Faction' },
+  ].sort((a, b) => a.label.localeCompare(b.label));
 
   const filteredCharacters = useMemo(() => {
     const query = searchQuery.toLowerCase();
@@ -107,8 +111,11 @@ export default function CharacterList() {
             className="btn"
             style={{ padding: '0.42rem 1.2rem 0.42rem 0.7rem' }}
           >
-            <option value="faction">Faction</option>
-            <option value="banner">Banner</option>
+            {groupingOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
           </select>
         </div>
       </div>

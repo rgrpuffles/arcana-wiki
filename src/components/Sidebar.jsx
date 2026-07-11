@@ -56,6 +56,7 @@ export default function Sidebar() {
 
   const isCharActive = (id) => location.pathname.startsWith(`/characters/${id}`);
   const isCharactersActive = location.pathname.startsWith('/characters');
+  const sortedCharacters = [...wikiData.characters].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <aside className="sidebar">
@@ -121,7 +122,7 @@ export default function Sidebar() {
               Characters
             </Link>
             <ul className="sub-nav-list">
-              {wikiData.characters.map((char) => {
+              {sortedCharacters.map((char) => {
                 const statusColor =
                   char.status === 'Alive'    ? 'var(--green)' :
                   char.status === 'Deceased' ? 'var(--ink-ghost)' :
