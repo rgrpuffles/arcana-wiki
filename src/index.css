@@ -494,6 +494,13 @@ a:hover { color: var(--rose); }
   color: var(--ink-faint);
 }
 
+.badge-affiliation {
+  align-self: flex-start;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+}
+
 .badge-rose {
   border-color: var(--rose-light);
   color: var(--rose);
@@ -1094,31 +1101,6 @@ a:hover { color: var(--rose); }
   font-weight: 600;
 }
 
-.card-desc {
-  font-family: var(--font-serif);
-  font-size: 0.83rem;
-  color: var(--ink-mid);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--border);
-  padding-top: 0.6rem;
-  margin-top: auto;
-  font-size: 0.75rem;
-  color: var(--ink-ghost);
-  font-family: var(--font-headings);
-  font-weight: 600;
-}
-
 /* Concept cards */
 .concept-card {
   background: var(--bg-panel);
@@ -1391,6 +1373,22 @@ a:hover { color: var(--rose); }
   margin-bottom: 1.75rem;
   border-bottom: 1.5px solid var(--border);
   padding-bottom: 1rem;
+}
+
+.search-controls-panel {
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border-mid);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  padding: 1.75rem;
+  position: relative;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 27px,
+    rgba(160, 120, 80, 0.04) 27px,
+    rgba(160, 120, 80, 0.04) 28px
+  );
 }
 
 .filter-controls {

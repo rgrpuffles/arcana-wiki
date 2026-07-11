@@ -21,8 +21,7 @@ export default function CharacterList() {
     let result = wikiData.characters.filter((char) => {
       const matchesSearch =
         char.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        char.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        char.species.toLowerCase().includes(searchQuery.toLowerCase());
+        char.affiliation.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesFaction =
         selectedFaction === 'All' || char.affiliation === selectedFaction;
       return matchesSearch && matchesFaction;
@@ -42,11 +41,11 @@ export default function CharacterList() {
   const getAffiliationBadge = (affiliation) => {
     switch (affiliation) {
       case 'Weatheria':
-        return <span className="badge badge-green"><Moon size={10} style={{ marginRight: 4 }} />Weatheria</span>;
+        return <span className="badge badge-green badge-affiliation"><Moon size={10} style={{ marginRight: 4 }} />Weatheria</span>;
       case 'Independent':
-        return <span className="badge badge-violet"><Sparkles size={10} style={{ marginRight: 4 }} />Independent</span>;
+        return <span className="badge badge-violet badge-affiliation"><Sparkles size={10} style={{ marginRight: 4 }} />Independent</span>;
       default:
-        return <span className="badge"><Moon size={10} style={{ marginRight: 4 }} />{affiliation}</span>;
+        return <span className="badge badge-affiliation"><Moon size={10} style={{ marginRight: 4 }} />{affiliation}</span>;
     }
   };
 
@@ -57,12 +56,12 @@ export default function CharacterList() {
       </div>
 
       {/* Filter controls */}
-      <div className="character-list-header glass-panel">
+      <div className="character-list-header search-controls-panel">
         <div className="search-input-wrapper">
           <Search className="search-icon" size={16} />
           <input
             type="text"
-            placeholder="Search by name, species…"
+            placeholder="Search characters..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -119,11 +118,7 @@ export default function CharacterList() {
               <div className="card-content">
                 <h3 className="card-name">{char.name}</h3>
                 <span className="card-title">{char.title}</span>
-                <p className="card-desc">{char.shortDescription}</p>
-                <div className="card-footer">
-                  {getAffiliationBadge(char.affiliation)}
-                  <span>Age: {char.age.split(' ')[0]}</span>
-                </div>
+                {getAffiliationBadge(char.affiliation)}
               </div>
             </div>
           ))}

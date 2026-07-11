@@ -77,7 +77,7 @@ export default function Sidebar() {
             <Search className="search-icon" size={15} />
             <input
               type="text"
-              placeholder="Search characters & lore…"
+              placeholder="Search pages..."
               value={searchQuery}
               onChange={handleSearchChange}
               onFocus={() => setIsSearchFocused(true)}
