@@ -51,6 +51,8 @@ export default function CharacterPage() {
   };
 
   const isDeceased = character.status?.toLowerCase() === 'deceased';
+  const relationships = character.relationships ?? [];
+  const trivia = character.trivia ?? [];
 
   return (
     <div className="character-page">
@@ -276,29 +278,47 @@ export default function CharacterPage() {
 
               {activeTab === 'relationships' && (
                 <div className="relationships-grid" style={{ animation: 'fadeIn 0.25s ease' }}>
-                  {character.relationships.map((rel, idx) => (
-                    <div
-                      key={idx}
-                      className="relationship-card"
-                      onClick={rel.characterId ? () => navigate(`/characters/${rel.characterId}/biography`) : undefined}
-                      title={rel.characterId ? `Go to ${getRelationName(rel.characterId)}'s page` : undefined}
-                      style={{ cursor: rel.characterId ? 'pointer' : 'default' }}
-                    >
-                      <div className="relationship-header">
-                        <h4 className="relationship-name">{rel.name || getRelationName(rel.characterId)}</h4>
-                        <span className="badge badge-rose" style={{ fontSize: '0.62rem' }}>{rel.relationType}</span>
+                  {relationships.length > 0 ? (
+                    relationships.map((rel, idx) => (
+                      <div
+                        key={idx}
+                        className="relationship-card"
+                        onClick={rel.characterId ? () => navigate(`/characters/${rel.characterId}/biography`) : undefined}
+                        title={rel.characterId ? `Go to ${getRelationName(rel.characterId)}'s page` : undefined}
+                        style={{ cursor: rel.characterId ? 'pointer' : 'default' }}
+                      >
+                        <div className="relationship-header">
+                          <h4 className="relationship-name">{rel.name || getRelationName(rel.characterId)}</h4>
+                          <span className="badge badge-rose" style={{ fontSize: '0.62rem' }}>{rel.relationType}</span>
+                        </div>
+                        <p className="relationship-desc">{rel.description}</p>
                       </div>
-                      <p className="relationship-desc">{rel.description}</p>
+                    ))
+                  ) : (
+                    <div className="tab-empty-state">
+                      <h4 className="tab-empty-title">No relationships recorded</h4>
+                      <p className="tab-empty-text">
+                        Akari does not have any relationship entries yet. When connections are added, they will appear here.
+                      </p>
                     </div>
-                  ))}
+                  )}
                 </div>
               )}
 
               {activeTab === 'trivia' && (
                 <ul className="trivia-list" style={{ animation: 'fadeIn 0.25s ease' }}>
-                  {character.trivia.map((triv, idx) => (
-                    <li key={idx} className="trivia-item">{triv}</li>
-                  ))}
+                  {trivia.length > 0 ? (
+                    trivia.map((triv, idx) => (
+                      <li key={idx} className="trivia-item">{triv}</li>
+                    ))
+                  ) : (
+                    <li className="tab-empty-state">
+                      <h4 className="tab-empty-title">No trivia recorded</h4>
+                      <p className="tab-empty-text">
+                        This character does not have trivia entries yet.
+                      </p>
+                    </li>
+                  )}
                 </ul>
               )}
             </div>
