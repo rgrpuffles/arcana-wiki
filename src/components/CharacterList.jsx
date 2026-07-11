@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Search, Filter, Moon, Sparkles } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import wikiData from '../data/wikiData.json';
+import { publicUrl } from '../utils/publicUrl';
 
 export default function CharacterList() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -107,7 +108,7 @@ export default function CharacterList() {
             >
               <div className="card-img-container">
                 <img
-                  src={char.image}
+                  src={publicUrl(char.image)}
                   alt={char.name}
                   onError={(e) => {
                     e.target.src =

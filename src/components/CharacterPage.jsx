@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronRight, Moon, Zap, Sparkles } from 'lucide-react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import wikiData from '../data/wikiData.json';
+import { publicUrl } from '../utils/publicUrl';
 
 export default function CharacterPage() {
   const { id, tab } = useParams();
@@ -81,7 +82,7 @@ export default function CharacterPage() {
 
           <div className="infobox-image-container">
             <img
-              src={character.image}
+              src={publicUrl(character.image)}
               alt={character.name}
               className="infobox-image"
               onError={(e) => {
